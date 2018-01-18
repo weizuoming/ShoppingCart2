@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hello.shoppingcart2.view.CartActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"
+        android:text="购物车"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="#999999"/>
+
+    <ExpandableListView
+        android:id="@+id/ex_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:groupIndicator="@null"></ExpandableListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="#999999"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cart_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="全选/反选"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/cart_sum12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="总价:0"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"/>
+    </LinearLayout>
+</LinearLayout>
